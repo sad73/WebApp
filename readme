@@ -1,1 +1,38 @@
+# 🔓 Vulnerable Web Application Setup & Testing Guide
 
+**Provided by Mohamed Sadik**
+
+---
+
+## 🚀 Overview
+
+This project is a deliberately vulnerable web app to help you learn and practice:
+
+- Session hijacking through insecure session management  
+- Cross-Site Scripting (XSS) attacks  
+- SQL Injection (SQLi) vulnerabilities  
+
+Use it to understand common attack vectors and improve your security skills.
+
+---
+
+## ✅ Prerequisites
+
+Make sure you have the following installed:
+
+- Apache2 web server  
+- PHP (with `mysqli` extension)  
+- MySQL or MariaDB database server  
+- Linux environment (Ubuntu/Debian recommended)  
+
+---
+
+## 🛠️ Installation & Configuration
+
+### 1. Install Required Software
+
+```bash
+sudo apt update
+sudo apt install apache2 php libapache2-mod-php php-mysqli mysql-server -y
+sudo a2enmod rewrite
+sudo systemctl restart apache2
